@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="calculadora">
+        <div class="titulo">
+            <h1>Calculadora AdaSchool</h1>
+        </div>
+        
         <div>
             <input type="text" id="resultado" placeholder="0">
+            <button class="num-button" onclick="resetear()">C</button>
         </div>
         <div class="num-container">
             <button class="num-button" onclick="numeros(7)">7</button>
@@ -31,13 +37,10 @@
             <button class="num-button" onclick="numeros('-')">-</button>
         </div>
         <div class="num-container">
-            <button class="num-button" onclick="numeros(0)">0</button>
             <button class="num-button" onclick="numeros('.')">.</button>
-            <button class="num-button" onclick="numeros('+')">+</button>
-        </div>
-        <div class="num-container">
-            <button class="num-button" onclick="resetear()">Resetear</button>
+            <button class="num-button" onclick="numeros(0)">0</button>
             <button class="num-button" onclick="operacion()">=</button>
+            <button class="num-button" onclick="numeros('+')">+</button>
         </div>
     </section>
     <script src="script.js"></script>
